@@ -76,21 +76,21 @@ if (pets > friendsPets) {
 
 console.log("Most pets:", mostPets); 
 */
-function furbabies(pets, friendsPets) {
-    let mostPets;
-  
-    if (pets > friendsPets) {
-      mostPets = pets;
-    } else {
-      mostPets = friendsPets;
-    }
-  
-    return mostPets;
+function furbabies(mine, yours) {
+  let mostPets;
+
+  if (mine > yours) {
+    mostPets = mine;
+  } else {
+    mostPets = yours;
   }
-  
-  let mostPets = furbabies(pets, friendsPets);
-  
-  console.log("I have the most pets with", mostPets + '!');
+
+  return mostPets;
+}
+
+let mostPets = furbabies(pets, friendsPets);
+
+console.log("I have the most pets with", mostPets + '!');
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
