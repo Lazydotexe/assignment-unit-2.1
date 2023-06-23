@@ -76,16 +76,19 @@ if (pets > friendsPets) {
 
 console.log("Most pets:", mostPets); 
 */
+
+
 function furbabies(mine, yours) {
-  let mostPets;
+  let results;
 
   if (mine > yours) {
-    mostPets = mine;
+    console.log("mine is greater than your");
+    results = mine;
   } else {
-    mostPets = yours;
+    results = yours;
   }
 
-  return mostPets;
+  return results;
 }
 
 let mostPets = furbabies(pets, friendsPets);
